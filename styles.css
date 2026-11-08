@@ -256,6 +256,35 @@ p { margin: 0 0 1.1em; }
 .bar i { display: block; height: 100%; border-radius: 99px; background: var(--green-bright); }
 .kcal { font-size: 2.6rem; font-weight: 900; letter-spacing: -0.04em; color: var(--green); line-height: 1; }
 
+/* Food tracker panel: the calorie ring, macros and the day's meals */
+.day-top { display: flex; align-items: center; gap: 22px; margin-bottom: 14px; }
+.kring { width: 128px; height: 128px; border-radius: 50%; flex: none; display: grid; place-items: center; text-align: center;
+  background: radial-gradient(closest-side, #fff 84%, transparent 86% 100%), conic-gradient(var(--green-tint) 0 50%, var(--green-bright) 0); }   /* fills counterclockwise from the top, like the app */
+.kring b { display: block; font-size: 1.9rem; font-weight: 900; letter-spacing: -0.04em; color: var(--green-deep); line-height: 1; }
+.kring small { display: block; font-size: .62rem; font-weight: 800; letter-spacing: .1em; color: var(--text-dim); margin-top: 4px; }
+.mac { flex: 1; display: grid; gap: 12px; }
+.mac span { display: block; font-size: .64rem; font-weight: 900; letter-spacing: .1em; }
+.mac b { font-size: .95rem; }
+.mac b small { color: var(--text-dim); font-weight: 700; font-size: .72rem; }
+.dash { display: flex; gap: 3px; margin-top: 4px; }
+.dash i { flex: 1; max-width: 10px; height: 4px; border-radius: 2px; background: var(--border); }
+.meal-row { display: grid; grid-template-columns: 48px 1fr auto; gap: 12px; align-items: center; padding: 10px 12px; border-top: 1px solid var(--border); border-left: 3px solid var(--green-bright); }
+.meal-row:first-of-type { border-top: 0; }
+.meal-row.empty { border-left-color: var(--green-soft); }
+.meal-row time { font-size: .78rem; font-weight: 800; color: var(--green-deep); }
+.meal-row b { display: block; font-size: .9rem; }
+.meal-row small { color: var(--text-muted); font-size: .76rem; }
+.meal-row em { font-style: normal; font-weight: 800; font-size: .88rem; }
+.meals { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+
+/* Training Blocks panel */
+.lift { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 11px 0; border-top: 1px solid var(--border); }
+.lift b { font-size: .93rem; }
+.lift small { color: var(--text-dim); font-weight: 700; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.lift .sets { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; }
+.lift .sets span { font-size: .72rem; font-weight: 800; color: var(--green-deep); background: var(--green-soft); border: 1px solid var(--green-tint); border-radius: 8px; padding: 3px 8px; }
+.superset { border-left: 3px solid var(--green-bright); padding-left: 12px; }
+
 /* ---------- Steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm); }

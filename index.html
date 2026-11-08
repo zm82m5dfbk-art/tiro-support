@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tiro — Football Performance App</title>
-<meta name="description" content="Tiro is the football performance app for players who train on their own: a plan built around your fixtures, a daily readiness brief, recovery, nutrition and your personal bests — in one place.">
+<meta name="description" content="Tiro is the football performance app for players who train on their own: a plan built around your fixtures, a daily readiness brief, recovery, a gym tracker, a food tracker and your personal bests — in one place.">
 <meta name="theme-color" content="#F6F8F3">
 <link rel="canonical" href="https://tiro-football.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tiro — Football Performance App">
-<meta property="og:description" content="A training plan built around your fixtures, a daily readiness brief, recovery and nutrition — for footballers who want to get better.">
+<meta property="og:description" content="A training plan built around your fixtures, a daily readiness brief, recovery, a gym tracker and a food tracker — for footballers who want to get better.">
 <meta property="og:url" content="https://tiro-football.com/">
 <meta property="og:image" content="https://tiro-football.com/assets/apple-touch-icon.png">
 <meta name="apple-itunes-app" content="app-id=6787748822">
@@ -69,7 +69,7 @@
               <div class="ui-date"><b>Saturday</b>Match day</div>
             </div>
             <div class="ui-card">
-              <div class="ui-h">Performance Brief <span class="ui-pill">🔥 12</span></div>
+              <div class="ui-h">Performance Brief <span class="ui-pill"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 1.6 1.2 2.6 2.5 3-.5-3 0-5.5 0-8z"/></svg> 12</span></div>
               <p class="ui-p">Sleep and energy are up on your usual. You're ready to go — fuel early and keep the warm-up sharp.</p>
               <div class="ui-lbl">Today</div>
               <p class="ui-p">• Pre-match meal 3–4 h before kick-off<br>• 2 L of water through the day</p>
@@ -124,8 +124,8 @@
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a3 3 0 0 0 6 0V3M10 3v18"/><path d="M17 3c-1.7 1.3-2 3.6-2 6s.9 3.4 2 4v8"/></svg></div>
-          <h3>Fuel for the work you do</h3>
-          <p>Daily targets that change with training and match days. Search real foods or scan a barcode, and keep an eye on water.</p>
+          <h3>A food tracker that's quick</h3>
+          <p>Calories and macros at a glance. Log food in one tap or any amount in grams, scan a barcode, and keep an eye on water.</p>
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7 4 4"/><path d="M3 21h18"/></svg></div>
@@ -154,6 +154,7 @@
             <li>Field and gym sessions split across the week, two lifts in-season</li>
             <li>No heavy gym work within two days of a match</li>
             <li>Feeling flat? Tiro can swap in a lighter session. Missed one? It finds space to catch up</li>
+            <li>Add a match, team training, a block, a workout or a test from one card</li>
             <li>Every suggestion can be switched off — it's a starting point, not an order</li>
           </ul>
         </div>
@@ -177,23 +178,64 @@
 
       <div class="split flip">
         <div>
-          <span class="eyebrow">Nutrition</span>
-          <h3>Eat for the session, not for a diet</h3>
-          <p>Your targets move with your week: more carbohydrate before a match, more protein while you rebuild. Logging takes seconds, and it's always optional.</p>
+          <span class="eyebrow">Training Blocks</span>
+          <h3>A gym tracker inside your football app</h3>
+          <p>Build your own workouts or start from a ready-made one, then log every set as you go.</p>
           <ul class="ticks">
-            <li>Search thousands of foods with measured nutrition data</li>
-            <li>Scan a barcode for packaged food</li>
-            <li>Repeat yesterday's breakfast in one tap</li>
+            <li>Supersets, warm-up sets and rest for each exercise</li>
+            <li>Ready-made gym splits and the sessions from your season program</li>
+            <li>Log weight and reps, with last time's numbers to beat</li>
+            <li>Gym exercises listed by muscle — search by name or muscle</li>
+            <li>A note when a heavy session lands close to a match you added</li>
+          </ul>
+        </div>
+        <div class="panel" aria-hidden="true">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <div style="font-weight:900;font-size:1.05rem">Upper Body &amp; Arms</div>
+            <span class="tag" style="margin:0">BLOCK</span>
+          </div>
+          <div style="color:var(--text-dim);font-size:.72rem;font-weight:800;letter-spacing:.1em;margin:4px 0 8px">7 EXERCISES · ~46 MIN</div>
+          <div class="lift"><b>Barbell Bench Press</b><small>4 × 6</small>
+            <div class="sets"><span>60 kg × 6</span><span>60 kg × 6</span><span>62.5 kg × 5</span><span>62.5 kg × 5</span></div></div>
+          <div class="superset">
+            <div class="lift"><b>Pull-Up</b><small>Superset</small>
+              <div class="sets"><span>BW × 8</span><span>BW × 8</span><span>BW × 7</span></div></div>
+            <div class="lift"><b>Dumbbell Row</b><small>Superset</small>
+              <div class="sets"><span>24 kg × 10</span><span>24 kg × 10</span><span>24 kg × 9</span></div></div>
+          </div>
+          <div class="lift"><b>Dumbbell Shoulder Press</b><small>Rest 1:30</small>
+            <div class="sets"><span>16 kg × 8</span><span>16 kg × 8</span><span>16 kg × 8</span></div></div>
+        </div>
+      </div>
+
+      <div class="split">
+        <div>
+          <span class="eyebrow">Food tracker</span>
+          <h3>Log a meal in seconds</h3>
+          <p>See your whole day at a glance, then get back to training. Logging is quick, and it's always optional.</p>
+          <ul class="ticks">
+            <li>A calorie ring with protein, carbs and fat beside it</li>
+            <li>Your meals as a simple log through the day</li>
+            <li>Add food in one tap, or type any amount in grams</li>
+            <li>Search thousands of foods, or scan a barcode</li>
             <li>Iron, vitamin C, calcium and more — from real measurements only</li>
           </ul>
         </div>
         <div class="panel" aria-hidden="true">
-          <div style="color:var(--text-dim);font-size:.72rem;font-weight:800;letter-spacing:.12em">MATCH DAY −1 · TARGET</div>
-          <div style="display:flex;align-items:baseline;gap:8px;margin:6px 0 14px"><span class="kcal">2,940</span><span style="color:var(--text-dim);font-weight:700">kcal</span></div>
-          <div class="macro"><span>Carbs</span><div class="bar"><i style="width:72%"></i></div><span>380 g</span></div>
-          <div class="macro"><span>Protein</span><div class="bar"><i style="width:58%"></i></div><span>150 g</span></div>
-          <div class="macro"><span>Fat</span><div class="bar"><i style="width:44%"></i></div><span>85 g</span></div>
-          <div class="macro"><span>Water</span><div class="bar"><i style="width:65%;background:#38BDF8"></i></div><span>3.0 L</span></div>
+          <div style="color:var(--text-dim);font-size:.72rem;font-weight:800;letter-spacing:.12em;margin-bottom:12px">TODAY'S FOOD</div>
+          <div class="day-top">
+            <div class="mac">
+              <div><span style="color:var(--amber)">Protein</span><b>84 <small>/ 160 g</small></b><div class="dash"><i style="background:var(--amber)"></i><i style="background:var(--amber)"></i><i style="background:var(--amber)"></i><i style="background:var(--amber)"></i><i style="background:var(--amber)"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div><span style="color:var(--green-bright)">Carbs</span><b>165 <small>/ 300 g</small></b><div class="dash"><i style="background:var(--green-bright)"></i><i style="background:var(--green-bright)"></i><i style="background:var(--green-bright)"></i><i style="background:var(--green-bright)"></i><i style="background:var(--green-bright)"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div><span style="color:#C2548F">Fat</span><b>38 <small>/ 70 g</small></b><div class="dash"><i style="background:#C2548F"></i><i style="background:#C2548F"></i><i style="background:#C2548F"></i><i style="background:#C2548F"></i><i style="background:#C2548F"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="kring"><div><b>1,203</b><small>/ 2,400 KCAL</small></div></div>
+          </div>
+          <div class="meals">
+            <div class="meal-row"><time>08:10</time><div><b>Breakfast</b><small>Oats, banana, Greek yogurt</small></div><em>520</em></div>
+            <div class="meal-row"><time>13:05</time><div><b>Lunch</b><small>Chicken breast, rice, broccoli</small></div><em>683</em></div>
+            <div class="meal-row empty"><time style="color:var(--text-dim)">later</time><div><b style="color:var(--green-deep)">＋ Dinner</b></div><em></em></div>
+          </div>
         </div>
       </div>
 
