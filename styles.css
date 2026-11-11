@@ -111,6 +111,40 @@ p { margin: 0 0 1.1em; }
 .nav-links a { color: var(--text-muted); font-size: .92rem; font-weight: 600; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
 
+.nav-end { display: flex; align-items: center; gap: 10px; }
+
+/* Language switcher: a small menu in the header's corner (a <details>, so it
+   works without JavaScript; lang.js closes it on an outside click or Escape) */
+.lang-switch { position: relative; }
+.lang-switch summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 11px 0 10px;
+  border-radius: 12px; border: 1px solid var(--border-strong); background: var(--surface);
+  color: var(--text); font-weight: 800; font-size: .8rem; letter-spacing: .06em;
+  transition: border-color .15s ease;
+}
+.lang-switch summary::-webkit-details-marker { display: none; }
+.lang-switch summary:hover, .lang-switch[open] summary { border-color: var(--green); }
+.lang-switch summary svg { width: 16px; height: 16px; color: var(--green); flex: none; }
+.lang-switch summary::after {
+  content: ''; width: 6px; height: 6px; margin: -3px 0 0 2px;
+  border-right: 2px solid var(--text-dim); border-bottom: 2px solid var(--text-dim);
+  transform: rotate(45deg); transition: transform .2s ease;
+}
+.lang-switch[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+.lang-menu {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 176px;
+  margin: 0; padding: 6px; list-style: none;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow);
+}
+.lang-menu a {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 12px; border-radius: 10px; color: var(--text); font-weight: 700; font-size: .92rem;
+}
+.lang-menu a:hover { background: var(--surface-2); color: var(--text); }
+.lang-menu a[aria-current] { background: var(--green-soft); color: var(--green-deep); }
+.lang-menu a[aria-current]::after { content: '✓'; font-weight: 900; }
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 9px;
@@ -285,6 +319,24 @@ p { margin: 0 0 1.1em; }
 .lift .sets span { font-size: .72rem; font-weight: 800; color: var(--green-deep); background: var(--green-soft); border: 1px solid var(--green-tint); border-radius: 8px; padding: 3px 8px; }
 .superset { border-left: 3px solid var(--green-bright); padding-left: 12px; }
 
+.lift .sets span.best { display: inline-flex; align-items: center; gap: 4px; color: #8A5A04; background: var(--amber-soft); border-color: #F2D49A; }
+.lift .sets span.best svg { width: 12px; height: 12px; }
+
+/* Progress panel: stats, the graph and the workout history */
+.prog-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0 4px; }
+.prog-stats div { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 9px 11px; }
+.prog-stats small { display: block; font-size: .6rem; font-weight: 800; letter-spacing: .1em; color: var(--text-dim); }
+.prog-stats b { font-size: 1.15rem; font-weight: 900; letter-spacing: -0.02em; }
+.prog-stats i { font-style: normal; font-size: .72rem; font-weight: 700; color: var(--text-dim); }
+.prog-stats .up b { color: var(--green-deep); }
+.chart { width: 100%; height: auto; margin: 6px 0 2px; }
+.hist-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 11px 0; border-top: 1px solid var(--border); }
+.hist-row b { display: block; font-size: .92rem; }
+.hist-row small { color: var(--text-dim); font-weight: 700; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.medal { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px; white-space: nowrap;
+  background: var(--amber-soft); border: 1px solid #F2D49A; color: #8A5A04; font-size: .7rem; font-weight: 900; }
+.medal svg { width: 12px; height: 12px; }
+
 /* ---------- Steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm); }
@@ -388,6 +440,12 @@ p { margin: 0 0 1.1em; }
 }
 @media (max-width: 760px) {
   .nav-links { display: none; }
+  .nav { gap: 10px; }
+  .nav-end { gap: 8px; }
+  .nav-end .btn-sm { padding: 10px 12px; white-space: nowrap; }
+  .nav .brand { letter-spacing: .24em; }
+  .lang-switch summary { padding: 0 9px; }
+  .lang-switch summary::after { display: none; }
   .section { padding: 72px 0; }
   .split + .split { margin-top: 72px; }
   .container { padding: 0 16px; }
@@ -395,6 +453,11 @@ p { margin: 0 0 1.1em; }
   .float-card { display: none; }
   .card, .step { padding: 22px; }
   .panel { padding: 18px; }
+}
+/* The smallest phones: the header keeps the logo and the language menu (the
+   hero's App Store button is right below) */
+@media (max-width: 359px) {
+  .nav-end .btn-sm { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

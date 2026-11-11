@@ -4,15 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tiro — Football Performance App</title>
-<meta name="description" content="Tiro is the football performance app for players who train on their own: a plan built around your fixtures, a daily readiness brief, recovery, a gym tracker, a food tracker and your personal bests — in one place.">
+<meta name="description" content="Tiro is the football performance app: a training plan built around your fixtures and fitted to you, a gym tracker with progress graphs, a daily readiness brief, recovery and a food tracker — in one place.">
 <meta name="theme-color" content="#F6F8F3">
-<link rel="canonical" href="https://tiro-football.com/">
+<!-- alternates --><link rel="canonical" href="https://tiro-football.com/">
+<meta property="og:url" content="https://tiro-football.com/">
+<link rel="alternate" hreflang="en" href="https://tiro-football.com/">
+<link rel="alternate" hreflang="es" href="https://tiro-football.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tiro-football.com/pt/">
+<link rel="alternate" hreflang="fr" href="https://tiro-football.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://tiro-football.com/"><!-- /alternates -->
+<!-- autolang --><script>(function(){try{if(localStorage.getItem('tiro_site_lang'))return;}catch(e){return;}var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase().slice(0,2);if(l==='es'||l==='pt'||l==='fr')location.replace(l+'/');})();</script><!-- /autolang -->
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tiro — Football Performance App">
-<meta property="og:description" content="A training plan built around your fixtures, a daily readiness brief, recovery, a gym tracker and a food tracker — for footballers who want to get better.">
-<meta property="og:url" content="https://tiro-football.com/">
+<meta property="og:description" content="A training plan built around your fixtures and fitted to you, a gym tracker with progress graphs, recovery and a food tracker — for footballers who want to get better.">
 <meta property="og:image" content="https://tiro-football.com/assets/apple-touch-icon.png">
 <meta name="apple-itunes-app" content="app-id=6787748822">
 <link rel="stylesheet" href="styles.css">
@@ -29,7 +35,10 @@
         <li><a href="support.html">Support</a></li>
         <li><a href="privacy.html">Privacy</a></li>
       </ul>
-      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6787748822">Get the app</a>
+      <div class="nav-end">
+        <!-- lang --><details class="lang-switch"><summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg><span>EN</span></summary><ul class="lang-menu"><li><a href="index.html" lang="en" hreflang="en" data-lang="en" aria-current="page">English</a></li><li><a href="es/index.html" lang="es" hreflang="es" data-lang="es">Español</a></li><li><a href="pt/index.html" lang="pt-BR" hreflang="pt-BR" data-lang="pt">Português</a></li><li><a href="fr/index.html" lang="fr" hreflang="fr" data-lang="fr">Français</a></li></ul></details><script src="lang.js" defer></script><!-- /lang -->
+        <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6787748822">Get the app</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -57,7 +66,7 @@
           </a>
           <a class="btn btn-ghost" href="#features">See what's inside</a>
         </div>
-        <p class="hero-note">Free to download · Tiro Pro unlocks the full plan · English, Español, Português</p>
+        <p class="hero-note">Free to download · Tiro Premium unlocks the full plan · English, Español, Português, Français</p>
       </div>
 
       <!-- The app's Home screen, drawn in HTML -->
@@ -104,13 +113,13 @@
       <div class="center">
         <span class="eyebrow">Everything in one place</span>
         <h2 class="section-title">The support a club gives its players — in your pocket</h2>
-        <p class="section-lead">Most players train on their own between team sessions. Tiro gives that time a plan, and shows you whether it's working.</p>
+        <p class="section-lead">Between team sessions, most players train without a plan. Tiro gives every session a purpose, and shows you whether it's working.</p>
       </div>
       <div class="grid grid-3">
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/><path d="M8 15l2.5 2.5L16 12"/></svg></div>
-          <h3>A plan built around your fixtures</h3>
-          <p>Add your matches and team trainings, and Tiro shapes every day around them — pre-season, in-season, post-season and off-season.</p>
+          <h3>A plan that fits you</h3>
+          <p>Your position, your level, how many days you can train, for how long and with what equipment — shaped around your matches, from pre-season to off-season.</p>
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/></svg></div>
@@ -120,7 +129,7 @@
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 5.6a5 5 0 0 0-7.1 0L12 7l-1.4-1.4a5 5 0 1 0-7.1 7.1L12 21l8.5-8.3a5 5 0 0 0 0-7.1z"/></svg></div>
           <h3>Recovery that reads your body</h3>
-          <p>A recovery score from your check-ins and Apple Health — sleep, HRV and resting heart rate — plus a soreness map and an injury log.</p>
+          <p>A recovery score from your check-ins and Apple Health — sleep, HRV and resting heart rate. Mark what's sore and Tiro lightens or swaps the work.</p>
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a3 3 0 0 0 6 0V3M10 3v18"/><path d="M17 3c-1.7 1.3-2 3.6-2 6s.9 3.4 2 4v8"/></svg></div>
@@ -129,8 +138,8 @@
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7 4 4"/><path d="M3 21h18"/></svg></div>
-          <h3>Your personal bests</h3>
-          <p>Top speed, distance and sprints from your watch or GPS vest through Apple Health, plus fitness and speed tests you can repeat every few weeks.</p>
+          <h3>Progress you can see</h3>
+          <p>Every workout saved, with a graph for any exercise you track. Plus top speed and distance from your watch or GPS vest, and tests to repeat every few weeks.</p>
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h7M9 17h5"/></svg></div>
@@ -152,9 +161,9 @@
           <p>Tiro counts the days to and from each match — the way pro clubs plan a microcycle — and puts the right work on each one.</p>
           <ul class="ticks">
             <li>Field and gym sessions split across the week, two lifts in-season</li>
+            <li>Built in 4-week blocks for your position, level and the time you have</li>
             <li>No heavy gym work within two days of a match</li>
             <li>Feeling flat? Tiro can swap in a lighter session. Missed one? It finds space to catch up</li>
-            <li>Add a match, team training, a block, a workout or a test from one card</li>
             <li>Every suggestion can be switched off — it's a starting point, not an order</li>
           </ul>
         </div>
@@ -180,13 +189,13 @@
         <div>
           <span class="eyebrow">Training Blocks</span>
           <h3>A gym tracker inside your football app</h3>
-          <p>Build your own workouts or start from a ready-made one, then log every set as you go.</p>
+          <p>Build your own workouts or start from a ready-made one, then press Start and log every set as you go.</p>
           <ul class="ticks">
+            <li>A workout timer, a rest timer and a countdown for timed drills</li>
+            <li>The weight to try next, from what you lifted last time</li>
+            <li>A medal for every new best — weight, reps or estimated max</li>
             <li>Supersets, warm-up sets and rest for each exercise</li>
-            <li>Ready-made gym splits and the sessions from your season program</li>
-            <li>Log weight and reps, with last time's numbers to beat</li>
-            <li>Gym exercises listed by muscle — search by name or muscle</li>
-            <li>A note when a heavy session lands close to a match you added</li>
+            <li>Ready-made gym splits, or build your own and swap any exercise</li>
           </ul>
         </div>
         <div class="panel" aria-hidden="true">
@@ -196,7 +205,7 @@
           </div>
           <div style="color:var(--text-dim);font-size:.72rem;font-weight:800;letter-spacing:.1em;margin:4px 0 8px">7 EXERCISES · ~46 MIN</div>
           <div class="lift"><b>Barbell Bench Press</b><small>4 × 6</small>
-            <div class="sets"><span>60 kg × 6</span><span>60 kg × 6</span><span>62.5 kg × 5</span><span>62.5 kg × 5</span></div></div>
+            <div class="sets"><span>60 kg × 6</span><span>60 kg × 6</span><span class="best"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="5"/><path d="M8.6 11L6 3h4l2 4.5L14 3h4l-2.6 8"/></svg>62.5 kg × 6</span><span>62.5 kg × 5</span></div></div>
           <div class="superset">
             <div class="lift"><b>Pull-Up</b><small>Superset</small>
               <div class="sets"><span>BW × 8</span><span>BW × 8</span><span>BW × 7</span></div></div>
@@ -209,6 +218,43 @@
       </div>
 
       <div class="split">
+        <div>
+          <span class="eyebrow">Progress</span>
+          <h3>Watch every session add up</h3>
+          <p>Every workout is saved, so you can see how far you've come — not just how today went.</p>
+          <ul class="ticks">
+            <li>Your workout history: sets, times and bests for each session</li>
+            <li>A graph for any exercise you track, even the ones you made</li>
+            <li>Tap any point for the exact number on that day</li>
+            <li>Measured the right way: weight, reps, time or distance</li>
+          </ul>
+        </div>
+        <div class="panel" aria-hidden="true">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <div style="font-weight:900;font-size:1.05rem">Barbell Bench Press</div>
+            <span class="tag" style="margin:0">WEIGHT</span>
+          </div>
+          <div class="prog-stats">
+            <div><small>LATEST</small><b>62.5 <i>kg</i></b></div>
+            <div><small>BEST</small><b>62.5 <i>kg</i></b></div>
+            <div class="up"><small>SINCE OCT</small><b>+7.5 <i>kg</i></b></div>
+          </div>
+          <svg class="chart" viewBox="0 0 300 128">
+            <defs><linearGradient id="progFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22C46E" stop-opacity=".22"/><stop offset="1" stop-color="#22C46E" stop-opacity="0"/></linearGradient></defs>
+            <path d="M14 34H286M14 70H286M14 106H286" stroke="#E2E8DC" stroke-width="1"/>
+            <path d="M20 88L85 70L150 70L215 52L280 34L280 106L20 106Z" fill="url(#progFill)"/>
+            <path d="M20 88L85 70L150 70L215 52L280 34" fill="none" stroke="#22C46E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#fff" stroke="#22C46E" stroke-width="2.5"><circle cx="20" cy="88" r="4.5"/><circle cx="85" cy="70" r="4.5"/><circle cx="150" cy="70" r="4.5"/><circle cx="215" cy="52" r="4.5"/></g>
+            <circle cx="280" cy="34" r="5.5" fill="#22C46E"/>
+            <rect x="160" y="14" width="110" height="24" rx="8" fill="#0E1D24"/>
+            <text x="215" y="30" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">60 kg · 2 Nov</text>
+          </svg>
+          <div class="hist-row"><div><b>Upper Body &amp; Arms</b><small>Mon 9 Nov · 46 min</small></div><span class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="5"/><path d="M8.6 11L6 3h4l2 4.5L14 3h4l-2.6 8"/></svg>2 bests</span></div>
+          <div class="hist-row"><div><b>Lower Body — Power</b><small>Thu 5 Nov · 52 min</small></div></div>
+        </div>
+      </div>
+
+      <div class="split flip">
         <div>
           <span class="eyebrow">Food tracker</span>
           <h3>Log a meal in seconds</h3>
@@ -251,7 +297,7 @@
         <p class="section-lead">No spreadsheets. Tell Tiro about your season once and it does the planning.</p>
       </div>
       <div class="steps">
-        <div class="step"><div class="step-num">1</div><h3>Tell Tiro about you</h3><p>Your position, what you want to improve, and when your season and team trainings are.</p></div>
+        <div class="step"><div class="step-num">1</div><h3>Tell Tiro about you</h3><p>Your position, what you want to improve, how often you can train, and when your season and team trainings are.</p></div>
         <div class="step"><div class="step-num">2</div><h3>Check in each morning</h3><p>Thirty seconds on sleep, energy, mood and soreness. Connect Apple Health for even more.</p></div>
         <div class="step"><div class="step-num">3</div><h3>Do today's work</h3><p>Tick sessions off as you go, keep your streak alive, and watch your bests climb.</p></div>
       </div>
@@ -290,8 +336,8 @@
   <section class="section-sm">
     <div class="container center">
       <span class="eyebrow">Made for football everywhere</span>
-      <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2rem)">Available in three languages</h2>
-      <div class="langs"><span class="lang">English</span><span class="lang">Español (Latinoamérica)</span><span class="lang">Português (Brasil)</span></div>
+      <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2rem)">Available in four languages</h2>
+      <div class="langs"><span class="lang">English</span><span class="lang">Español (Latinoamérica)</span><span class="lang">Português (Brasil)</span><span class="lang">Français</span></div>
     </div>
   </section>
 

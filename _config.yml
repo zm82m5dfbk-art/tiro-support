@@ -1,0 +1,3 @@
+# GitHub Pages: the language builder and its translations aren't part of the site
+exclude:
+  - tools
